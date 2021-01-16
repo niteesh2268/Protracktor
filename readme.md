@@ -1,120 +1,120 @@
 -------------------------------------------------------------
-Team Name - Quad-core
-Project - Protracktor - Local Proctoring and Activity Tracker
-Date: 17th November, 2020
+Team Name - Quad-core <br />
+Project - Protracktor - Local Proctoring and Activity Tracker <br />
+Date: 17th November, 2020 <br />
 -------------------------------------------------------------
 
-Contributors:
-Amit Kumar Bala Antu    (203051003 - antukbala) 
-Kunal Verma		(203050121 - kunalverma) 
-Nimesh Agrawal		(203050049 - nimesh) 
-Mallela Niteesh Kumar	(203050065 - niteesh)
-Shubhranshu Maurya	(203050096 - shubhranshu) 
+Contributors: <br />
+Amit Kumar Bala Antu    (203051003 - antukbala)  <br />
+Kunal Verma		(203050121 - kunalverma) <br />
+Nimesh Agrawal		(203050049 - nimesh) <br />
+Mallela Niteesh Kumar	(203050065 - niteesh)<br />
+Shubhranshu Maurya	(203050096 - shubhranshu) <br />
 
 
-Git Repository
+Git Repository <br />
 --------------
-*Cloning the Repository
-link of git repo: https://git.cse.iitb.ac.in/nimesh/Protracktor.git
-use git clone <url> to clone the repo
+*Cloning the Repository <br />
+link of git repo: https://git.cse.iitb.ac.in/nimesh/Protracktor.git <br />
+use git clone <url> to clone the repo <br />
 
  
-How to operate Protracktor
+How to operate Protracktor <br />
 --------------------------
-*Getting dependencies ready:
-1) Automatically using "installer.sh"
-"installer.sh" file which will take care of all the dependencies and requirements for the project.
-To run "installer.sh", go to the project directory "Protracktor/source" where "installer.sh" is present and then run the following commands:
-    $ chmod +x installer.sh
-    $ ./installer.sh
-2) Alternatively (If some dependencies are still left, generally should not happen)    
-If some requirements are still missed please follow the steps below to manually install the dependencies.
-Install "python" on your system by running the following command on your terminal:
-    $ sudo apt-get install python3.6
+*Getting dependencies ready: <br />
+1) Automatically using "installer.sh" <br />
+"installer.sh" file which will take care of all the dependencies and requirements for the project. <br />
+To run "installer.sh", go to the project directory "Protracktor/source" where "installer.sh" is present and then run the following commands: <br />
+    $ chmod +x installer.sh <br />
+    $ ./installer.sh <br />
+2) Alternatively (If some dependencies are still left, generally should not happen)    <br />
+If some requirements are still missed please follow the steps below to manually install the dependencies. <br />
+Install "python" on your system by running the following command on your terminal: <br />
+    $ sudo apt-get install python3.6 <br />
  
     
-Screen activity module needs "xdotool" to get window’s information:
-    $ sudo apt-get install xdotool
+Screen activity module needs "xdotool" to get window’s information: <br />
+    $ sudo apt-get install xdotool <br />
   
     
-For Internet Tracking Module install "nethogs":
-    $ sudo apt-get install nethogs
-    $ sudo setcap "cap_net_admin,cap_net_raw=ep" /usr/sbin/nethogs
+For Internet Tracking Module install "nethogs": <br />
+    $ sudo apt-get install nethogs <br />
+    $ sudo setcap "cap_net_admin,cap_net_raw=ep" /usr/sbin/nethogs <br />
     
     
-To install "PyAutoGUI" additionally you need to install the "scrot" application, as well as "Tkinter":
-    $ sudo apt-get install scrot
-    $ sudo apt-get install python3-tk
-    $ sudo apt-get install python3-dev
-    $ sudo pip3 install python3-xlibsudo
-    $ sudo pip3 install pyautogui
-    $ sudo pip3 numpy==1.18.5
-    $ sudo pip3 notify2==0.3.1
-    $ sudo pip3 matplotlib==3.3.1
-    $ sudo pip3 opencv_python==4.1.2.30
-    $ sudo pip3 PyQt5==5.15.1
+To install "PyAutoGUI" additionally you need to install the "scrot" application, as well as "Tkinter": <br />
+    $ sudo apt-get install scrot <br />
+    $ sudo apt-get install python3-tk <br />
+    $ sudo apt-get install python3-dev <br />
+    $ sudo pip3 install python3-xlibsudo <br />
+    $ sudo pip3 install pyautogui <br />
+    $ sudo pip3 numpy==1.18.5 <br />
+    $ sudo pip3 notify2==0.3.1 <br />
+    $ sudo pip3 matplotlib==3.3.1 <br />
+    $ sudo pip3 opencv_python==4.1.2.30 <br />
+    $ sudo pip3 PyQt5==5.15.1 <br />
     
-*After installing all the dependencies:
-Go to the main directory "Protracktor" and in that go to source directory.
-After that run the following command in terminal:
-    $ python3 main.py
+*After installing all the dependencies: <br />
+Go to the main directory "Protracktor" and in that go to source directory. <br />
+After that run the following command in terminal: <br />
+    $ python3 main.py <br />
     
-This will start the application.
+This will start the application. <br />
 
 
 Using the program
 ------------------
-The main window has two tabs namely "Local Proctoring" and "Let's Start".
-    1) First enter the course code you want to start proctoring for.
-    2) This field is used to name the log files and video files with additional timestamps added as a naming convention for files
-    3) Click on "Next" to move to the next tab "Let's Start"
-On clicking next after entering the course code you will be directed to the next tab ("Let's Start" tab).
+The main window has two tabs namely "Local Proctoring" and "Let's Start". <br />
+    1) First enter the course code you want to start proctoring for. <br />
+    2) This field is used to name the log files and video files with additional timestamps added as a naming convention for files <br />
+    3) Click on "Next" to move to the next tab "Let's Start" <br />
+On clicking next after entering the course code you will be directed to the next tab ("Let's Start" tab). <br />
 
-Here there are four check boxes named according to the functionalities they will provide, namely:
-    a) Webcam Recording
-    b) Screen Recording
-    c) Activity Manager
-    d) Data usage per app
-Check on the required functionalities you want monitored during the proctoring.
+Here there are four check boxes named according to the functionalities they will provide, namely: <br />
+    a) Webcam Recording <br />
+    b) Screen Recording <br />
+    c) Activity Manager <br />
+    d) Data usage per app <br />
+Check on the required functionalities you want monitored during the proctoring. <br />
 
-***Note***: Internet loss triggered - Webcam and screen recording will only start if there is a loss in internet connectivity detected.
-    		This assumes that you are already on some proctoring platform like ms teams initially and if there is a loss of internet connectivity then only webcam recording will start.
+***Note***: Internet loss triggered - Webcam and screen recording will only start if there is a loss in internet connectivity detected. <br />
+    		This assumes that you are already on some proctoring platform like ms teams initially and if there is a loss of internet connectivity then only webcam recording will start. <br />
     		
-After checking on the appropriate check boxes you can start the monitoring by clicking on "Start" button.
-After clicking on start a new pop-up window will open.
+After checking on the appropriate check boxes you can start the monitoring by clicking on "Start" button. <br />
+After clicking on start a new pop-up window will open. <br />
 
 
 Notifications
 -------------
-Two types of notification are issued to the user during the proctoring.
-    - When Internet goes down.
-    - When Internet comes back.
+Two types of notification are issued to the user during the proctoring. <br />
+    - When Internet goes down. <br />
+    - When Internet comes back. <br />
     
     
 Terminating the program
 -----------------------
-Whenever you want to stop the proctoring/monitoring just click on the stop button.
-This will close the application also.
-All the corresponding outputs will be saved in the "Results" directory in the main folder.
+Whenever you want to stop the proctoring/monitoring just click on the stop button. <br />
+This will close the application also. <br />
+All the corresponding outputs will be saved in the "Results" directory in the main folder. <br />
 
 
 Viewing the Results/outputs/graphs
 ----------------------------------
-1) The "Proctoring" option in menu bar will direct you to various log files and graphs generated by the software.
-	By clicking on this proctoring Option you will get a drop-down with following options.
-	-Results
-		-Data Usage
-	    -Activity Monitor
-	    -Screen Recordings
-	    -Video Recordings
-	    
-	-Graph
-	    -Latest activity tracker
-	    -Latest Data Usage
-	The Results section will take you the corresponding folder where log files and graphs are stored.
-	The Graph section will display the latest graph of the corresponding option you will select.
-2) Help option:
- 	This option will display the documentation to you.
+1) The "Proctoring" option in menu bar will direct you to various log files and graphs generated by the software. <br />
+	By clicking on this proctoring Option you will get a drop-down with following options. <br />
+	-Results <br />
+	    -Data Usage <br />
+	    -Activity Monitor <br />
+	    -Screen Recordings <br />
+	    -Video Recordings <br />
+	     
+	-Graph <br />
+	    -Latest activity tracker <br />
+	    -Latest Data Usage <br />
+	The Results section will take you the corresponding folder where log files and graphs are stored. <br />
+	The Graph section will display the latest graph of the corresponding option you will select. <br />
+2) Help option: <br />
+ 	This option will display the documentation to you. <br />
  	
  	
     
