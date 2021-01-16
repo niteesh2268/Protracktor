@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>window_activity Reference &#8212; Protracktor 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="read_config Reference" href="read_config.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="read_config.html" title="read_config Reference"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Protracktor 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">window_activity Reference</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="window-activity-reference">
+<span id="window-activity"></span><h1>window_activity Reference<a class="headerlink" href="#window-activity-reference" title="Permalink to this headline">¶</a></h1>
+<p>Following are the classes and functions defined within this module:</p>
+<span class="target" id="module-Project.system.window_activity"></span><dl class="py function">
+<dt id="Project.system.window_activity.currtime">
+<code class="sig-prename descclassname">Project.system.window_activity.</code><code class="sig-name descname">currtime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tformat</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Project.system.window_activity.currtime" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method checks for the file and returns the time in respective format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tformat</strong> (<em>str</em><em> or </em><em>None</em>) – <cite>File</cite> as the string argument</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>time</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Project.system.window_activity.get">
+<code class="sig-prename descclassname">Project.system.window_activity.</code><code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">command</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Project.system.window_activity.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method gets the output of the <code class="docutils literal notranslate"><span class="pre">xdotool</span></code> commands and decodes it to utf-8 format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>command</strong> (<em>list</em>) – <code class="docutils literal notranslate"><span class="pre">xdotool</span></code> commands are as argument to command parameter</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output of command in utf-8 format</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="Project.system.window_activity.myThread4">
+<em class="property">class </em><code class="sig-prename descclassname">Project.system.window_activity.</code><code class="sig-name descname">myThread4</code><a class="headerlink" href="#Project.system.window_activity.myThread4" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="Project.system.window_activity.myThread4.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Project.system.window_activity.myThread4.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method initiates the running of this module and continuosly 
+runs the activity tracking with the help of other methods described here</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="Project.system.window_activity.plot">
+<code class="sig-prename descclassname">Project.system.window_activity.</code><code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Project.system.window_activity.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the bar an <cite>Application name Vs Percentage of time used</cite> graph from the final csv file 
+generated by <code class="docutils literal notranslate"><span class="pre">summarize()</span></code> method and saves it int the respective results directory.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Project.system.window_activity.summarize">
+<code class="sig-prename descclassname">Project.system.window_activity.</code><code class="sig-name descname">summarize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em>, <em class="sig-param"><span class="n">winlist</span></em>, <em class="sig-param"><span class="n">applist</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Project.system.window_activity.summarize" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method performs the actual activity of listing 
+the window activity within a text and CSV files in the 
+respective results directory named corresponding to their timestamp 
+to provide a detailed statistics of usage of each application.</p>
+<p>It is repeatedly called by <code class="docutils literal notranslate"><span class="pre">run()</span></code> after a fixed time interval 
+to update the values in the files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>t</strong> (<em>int</em>) – Total time in seconds</p></li>
+<li><p><strong>winlist</strong> (<em>list</em>) – A list which stores the active tab within an application over the period for which the application ran</p></li>
+<li><p><strong>applist</strong> (<em>list</em>) – A list which stores active applications over the period for which the application ran</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Project.system.window_activity.time_format">
+<code class="sig-prename descclassname">Project.system.window_activity.</code><code class="sig-name descname">time_format</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Project.system.window_activity.time_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method coverts cumulative time in seconds into HH:MM:SS</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> (<em>int</em>) – total seconds time</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>time in HH:MM:SS format</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="read_config.html"
+                        title="previous chapter">read_config Reference</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/window_activity.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="read_config.html" title="read_config Reference"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Protracktor 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">window_activity Reference</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Quad-core.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+  </body>
+</html>

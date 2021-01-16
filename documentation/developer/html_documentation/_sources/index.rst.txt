@@ -1,0 +1,45 @@
+.. Protracktor documentation master file, created by
+   sphinx-quickstart on Tue Nov 17 15:45:04 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Protracktor - Local Proctoring and Activity Tracker
+===================================================
+
+
+**Protracktor** is a local proctoring and activity tracking application. It is designed to address the issues faced by the students of the IIT-Bombay in this online setup. 
+The online environment of conducting classes & delivering lecture content, assignments, proctoring and evaluation has created several opportunities along with challenges towards which this application is projected. 
+
+Protracktor aims to let users manage their screen time and to ease the management of video proctoring by managing video recordings and activity tracker so that students are able to give uninterrupted exams without dealing with the pain of setting up video cam and screen recording everytime the connection is lost while being video proctored. The application will automatically detect loss of internet connection and start webcam and screen recording. It will also generate time-stamped activity statistics for whatever time the exam was scheduled so that any suspicious activity can easily be detected. This will both be beneficial for students as well as teachers for conducting remote proctoring exams. To acheive this following 4 options are added in the application:
+
+* Webcam Recording
+* Screen recording
+* Activity Manager
+* Data usage per app
+
+
+Contents
+========
+
+Following are the list of modules in the application
+
+.. toctree::
+   :maxdepth: 1
+
+   check internet <check_internet>
+   Data usage per app <data_usage_per_app>
+   Screen <screen>
+   Webcam <webcam>
+   Read config <read_config>
+   Window activity <window_activity>
+
+
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

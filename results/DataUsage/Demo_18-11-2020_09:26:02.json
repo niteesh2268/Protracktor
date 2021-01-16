@@ -1,0 +1,17 @@
+{
+    "firefox": {
+        "Upload": 0.205067,
+        "Download": 3.86859,
+        "total": 4.073657
+    },
+    "zoom": {
+        "Upload": 0.00278568,
+        "Download": 0.0112019,
+        "total": 0.013987580000000001
+    },
+    "teams": {
+        "Upload": 0.330525,
+        "Download": 0.775587,
+        "total": 1.106112
+    }
+}
